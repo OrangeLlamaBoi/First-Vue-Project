@@ -6,16 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./CSS/index.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 
 <body>
 
+    <!-- Lesson 1 & 2
     <div id="app">
         <p>{{ title }}</p>
         <button v-on:click="title = `New Title`">Change Title</button>
         <button v-on:click="changeTitle">Change Title</button>
     </div>
+    </div> -->
+
+    <div id="app">
+        <input type="text" v-on:input="cssClass = $event.target.value">
+        <p v-bind:class="cssClass">Class: {{ cssClass }}</p>
     </div>
 
     <script src="./JS/App.js"></script>
