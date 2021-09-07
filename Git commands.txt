@@ -16,7 +16,7 @@ Merge Branch
 git branch -a
 git checkout main
 git pull origin main
-git branch --merged
+git branch --merge
 git merge branchName
 git push origin main
 
