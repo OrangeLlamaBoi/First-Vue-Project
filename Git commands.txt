@@ -1,0 +1,15 @@
+Create new Branch
+===========================================
+git branch branchName
+git checkout branchName
+git branch
+
+Commit Branch
+===========================================
+git status
+
+Merge Branch
+===========================================
+
+Delete Branch
+===========================================

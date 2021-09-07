@@ -1,12 +1,18 @@
 new Vue({
     el: "#app",
     data: {
-        title: "Hello World!",
-        cssClass: ""
+        counter: 0,
+        clicks: 0
     },
     methods: {
-        changeTitle() {
-            this.title = "Changed Title";
+        increment() {
+            this.clicks++;
+            // this.counter = this.counter + 2;
+        }
+    },
+    computed: {
+        counter() {
+            return this.clicks * 2;
         }
     }
 });
