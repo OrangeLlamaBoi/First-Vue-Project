@@ -1,11 +1,21 @@
+Vue.filter(`uppercase`, function (value) {
+    return value.toUpperCase();
+});
+
 new Vue({
     el: "#app",
     data: {
-        show: true,
-        persons: [
-            { name: `Max`, age: 27 },
-            { name: `Chris`, age: 30 },
-            { name: `Nora`, age: 29 }
-        ]
+        title: `hello world!`,
+        message: `something`
+    },
+    computed: {
+        theTitle: function () {
+            return this.title.toUpperCase();
+        }
+    },
+    filters: {
+        lowercase: function (value) {
+            return value.toLowerCase();
+        }
     }
 });
