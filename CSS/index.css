@@ -1,7 +1,5 @@
-.red{
-    background: red;
-}
-
-.blue{
-    background: blue;
+.user {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px;
 }
