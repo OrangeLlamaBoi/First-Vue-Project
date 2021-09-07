@@ -25,3 +25,7 @@ Delete Branch
 git branch -d branchName
 git branch -a
 git push origin --delete branchName
+
+Run Vue App
+===========================================
+npm run serve
