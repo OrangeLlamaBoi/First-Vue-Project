@@ -7,9 +7,21 @@ git branch
 Commit Branch
 ===========================================
 git status
+git add -A
+git commit -m ""
+git push -u origin branchName
 
 Merge Branch
 ===========================================
+git branch -a
+git checkout main
+git pull origin main
+git branch --merged
+git merge branchName
+git push origin main
 
 Delete Branch
 ===========================================
+git branch -d branchName
+git branch -a
+git push origin --delete branchName
